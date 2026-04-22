@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Calculadora de Roi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="card">
+        <div class="header">
+            <svg class="logo-mark" viewBox="0 0 40 40" fill="nome" xmlns="https://www.w3.org/2000/svg"></svg>
+        </div>
+        <div class="brand">Checkmate Media</div>
+        <h1>Calculadora de ROI e ROAS</h1>
+    </div>
+</div>
+
+<div class="form-body">
+
+
+<div class="field">
+    <label for="investimento">Investimento total</label>
+    <div class="input-wrap">
+        <span class="currency-prefix">R$</span>
+        <input type="number" id="Investimento" placeholder="0,00" min="0" step="0.01" />
+    </div>
+</div>
+
+<div class="field">
+    <label for="receita">Receita gerada</label>
+    <div class="input-wrap">
+        <span class="currency-prefix">R$</span>
+        <input type="number" id="receita" placeholder="0,00" min="0" step="0.01"/>
+    </div>
+</div>
+
+<button class="btn" onclick="calcularROI()">
+    Calcular perfomance
+</button>
+
+</div>
 </body>
 </html>
