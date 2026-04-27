@@ -56,3 +56,6 @@ const formatarMoeda = (valor) =>
     </div>
   `;
 }
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') calcularROI ();
+});
